@@ -18,8 +18,8 @@ spec:
         app: bgd
     spec:
       containers:
-        - image: quay.io/redhatworkshops/bgd:latest
-          name: bgd
+        - image: docker.io/joost1986/openshift-test:latest
+          name: openshift-test
           env:
             - name: COLOR
               value: "green"
