@@ -3,15 +3,15 @@ kind: Route
 metadata:
   creationTimestamp: null
   labels:
-    app: bgd
-  name: bgd
-  namespace: bgd
+    app: test
+  name: test
+  namespace: argocd
 spec:
   host: ""
   port:
     targetPort: 8080
   to:
     kind: Service
-    name: bgd
+    name: test
     weight: 100
 status: {}
