@@ -5,7 +5,6 @@ metadata:
   labels:
     app: test
   name: test
-  namespace: argocd
 spec:
   host: ""
   port:
