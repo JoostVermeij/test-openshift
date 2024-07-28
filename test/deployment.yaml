@@ -1,26 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
-  labels:
-    app: test
-  name: test
+  name: myapp
 spec:
-  replicas: 2
   selector:
     matchLabels:
-      app: test
-  strategy: {}
+      app: myapp
+  replicas: 2
   template:
     metadata:
-      creationTimestamp: null
       labels:
-        app: test
+        app: myapp
     spec:
       containers:
-        - image: docker.io/joost1986/openshift-test:v1
-          name: openshift-test
+        - name: myapp
+          image: docker.io/joost1986/openshift-test:latest
+          ports:
+          - containerPort: 8080
           env:
           - name: MESSAGE
             value: "Hello World!"
-          resources: {}
