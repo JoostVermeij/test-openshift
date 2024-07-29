@@ -16,7 +16,7 @@ spec:
         - name: myapp
           image: docker.io/joost1986/openshift-test:latest
           ports:
-          - containerPort: 80
+          - containerPort: 8081
           env:
           - name: MESSAGE
             value: "Hello World!"
