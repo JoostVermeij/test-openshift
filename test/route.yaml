@@ -10,7 +10,7 @@ metadata:
 spec:
   host: myapp-service-myapp.apps-crc.testing
   port:
-    targetPort: 80
+    targetPort: 8081
   to:
     kind: Service
     name: myapp-service
