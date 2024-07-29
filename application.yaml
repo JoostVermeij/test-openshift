@@ -4,7 +4,7 @@ metadata:
   name: myapp-argo-application
   namespace: argocd
 spec:
-  project: argocd
+  project: default
   source:
     repoURL: https://github.com/JoostVermeij/test-openshift.git
     targetRevision: HEAD
