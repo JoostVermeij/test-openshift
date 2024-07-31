@@ -26,7 +26,7 @@ spec:
         name: nginx-unprivileged:latest
       env:
       - name: MESSAGE
-        value: "Hello! How you doin'?"
+        value: "Hello! How you doing?"
 #      - name: MY_NODE_NAME
 #        valueFrom:
 #          fieldRef:
