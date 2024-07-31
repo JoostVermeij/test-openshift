@@ -9,12 +9,15 @@ spec:
   replicas: 2
   template:
     metadata:
+      annotations:
+        alpha.image.policy.openshift.io/resolve-names: '*'
       labels:
         app: myapp
     spec:
       containers:
         - name: myapp
-          image: image-registry.openshift-image-registry.svc:5000/openshift-gitops/test-openshift-code
+          image: test-openshift-code:latest
+          imagePullPolicy: Always
           ports:
           - containerPort: 8081
           env:
