@@ -1,0 +1,22 @@
+apiVersion: image.openshift.io/v1
+kind: ImageStream
+metadata:
+  labels:
+    build: test-openshift-code
+  name: nginx-unprivileged
+  namespace: openshift-gitops
+spec:
+  lookupPolicy:
+    local: false
+  tags:
+    - annotations:
+        openshift.io/imported-from: nginxinc/nginx-unprivileged
+      from:
+        kind: DockerImage
+        name: nginxinc/nginx-unprivileged
+      generation: 2
+      importPolicy:
+        importMode: Legacy
+      name: latest
+      referencePolicy:
+        type: Source
