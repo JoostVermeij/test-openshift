@@ -6,7 +6,7 @@ metadata:
   labels:
     build: test-openshift-code
   name: test-openshift-code
-  namespace: openshift-gitops
+  namespace: myapp
 spec:
   lookupPolicy:
     local: true

@@ -4,7 +4,7 @@ metadata:
   labels:
     build: test-openshift-code
   name: nginx-unprivileged
-  namespace: openshift-gitops
+  namespace: myapp
 spec:
   lookupPolicy:
     local: false
