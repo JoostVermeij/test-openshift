@@ -15,7 +15,7 @@ spec:
         app: myapp
     spec:
       containers:
-        - name: myapp
+        - name: test-openshift-code
           image: test-openshift-code:latest
           imagePullPolicy: Always
           ports:
