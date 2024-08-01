@@ -3,5 +3,7 @@ kind: ConfigMap
 metadata:
   name: cm-pod-data
 data:
-  file.txt: "Sample data in file.txt"
-  another-file.txt: "More data in another-file.txt"
+  file.txt: |
+    "Sample data in file.txt"
+  another-file.txt: |
+    "More data in another-file.txt"
