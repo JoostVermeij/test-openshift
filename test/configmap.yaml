@@ -7,3 +7,12 @@ data:
     "Sample data in file.txt"
   another-file.txt: |
     "More data in another-file.txt"
+  environment.prod.ts: |
+    export const environment = {
+      MESSAGE: 'Hello! From configmap',
+      MY_NODE_NAME: 'first node?',
+      MY_POD_NAME: 'first pod?',
+      MY_POD_NAMESPACE: 'dunno',
+      MY_POD_IP: '1. No 2. 42?',
+      MY_POD_SERVICE_ACCOUNT: 'Super Secret Service Account Thingy'
+    }
