@@ -46,7 +46,7 @@ spec:
           volumeMounts:
             - name: volume-cm
               mountPath: "/pod-data"
-              subPath: "file1.txt"
+              subPath: "file.txt"
               readOnly: true
       volumes:
         - name: volume-cm
