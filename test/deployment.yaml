@@ -44,12 +44,12 @@ spec:
               fieldRef:
                 fieldPath: spec.serviceAccountName
           volumeMounts:
-            - name: cm-pod-data
+            - name: volume-cm
               mountPath: "/pod-data"
               subPath: "file1.txt"
               readOnly: true
       volumes:
-        - name: volume-1
+        - name: volume-cm
           configMap:
             name: cm-pod-data
             items:
