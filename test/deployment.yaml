@@ -43,3 +43,11 @@ spec:
             valueFrom:
               fieldRef:
                 fieldPath: spec.serviceAccountName
+          volumeMounts:
+            - mountPath: /pod-data
+              name: cm-pod-data
+      volumes:
+        - configMap:
+            defaultMode: 420
+            name: cm-pod-data
+          name: volume-1
