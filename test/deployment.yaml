@@ -45,12 +45,8 @@ spec:
                 fieldPath: spec.serviceAccountName
           volumeMounts:
             - name: volume-cm
-              mountPath: "/pod-data/file.txt"
-              subPath: "file.txt"
+              mountPath: "/pod-data"
       volumes:
         - name: volume-cm
           configMap:
             name: cm-pod-data
-            items:
-            - key: "file.txt"
-              path: "file.txt"
