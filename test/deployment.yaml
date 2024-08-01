@@ -45,7 +45,7 @@ spec:
                 fieldPath: spec.serviceAccountName
           volumeMounts:
             - name: volume-cm
-              mountPath: "/pod-data"
+              mountPath: "/usr/share/nginx/html
       volumes:
         - name: volume-cm
           configMap:
