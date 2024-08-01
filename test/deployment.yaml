@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: test-openshift-code
-          image: test-openshift-code:latest
+          image: image-registry.openshift-image-registry.svc:5000/myapp/test-openshift-code:latest
           imagePullPolicy: Always
           ports:
           - containerPort: 8081
